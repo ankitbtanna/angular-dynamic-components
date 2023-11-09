@@ -1,2 +1,4 @@
-<angular-dynamic-components-nx-welcome></angular-dynamic-components-nx-welcome>
-<router-outlet></router-outlet>
+<angular-dynamic-components-member-item
+  *ngFor="let member of members"
+  [member]="member"
+></angular-dynamic-components-member-item>

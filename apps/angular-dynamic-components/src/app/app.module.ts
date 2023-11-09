@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { CatItemComponent } from './cat-item/cat-item.component';
+import { DogItemComponent } from './dog-item/dog-item.component';
+import { MemberItemComponent } from './member-item/member-item.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+  declarations: [
+    AppComponent,
+    CatItemComponent,
+    DogItemComponent,
+    MemberItemComponent,
   ],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
 })
